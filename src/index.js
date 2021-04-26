@@ -13,6 +13,8 @@ search.use(
   })
 );
 
+aa('setUserToken', 'yourToken');
+
 search.addWidgets([
   instantsearch.widgets.searchBox({
     container: '#searchbox',
