@@ -33,17 +33,17 @@ search.addWidgets([
           hit.__queryID;
 
         return `
-        <a class="hit-card" href="${productURL}" ${bindEvent(
-          'click',
-          hit,
-          'clicked the result'
-        )}>
-          <div class="hit-content">
-            <img src="${hit.image}" alt="${hit.name}" />
-            <div class="hit-name">${hit._highlightResult.name.value}</div>
-          </div>
-        </a>
-      `;
+          <a class="hit-card" href="${productURL}" ${bindEvent(
+            'click',
+            hit,
+            'clicked the result'
+          )}>
+            <div class="hit-content">
+              <img src="${hit.image}" alt="${hit.name}" />
+              <div class="hit-name">${hit._highlightResult.name.value}</div>
+            </div>
+          </a>
+        `;
       },
     },
   }),
