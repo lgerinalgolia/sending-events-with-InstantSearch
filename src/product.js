@@ -1,5 +1,3 @@
-/* global aa algoliasearch */
-
 const urlParams = new URLSearchParams(window.location.search);
 
 const indexName = 'ecommerce_with_settings';

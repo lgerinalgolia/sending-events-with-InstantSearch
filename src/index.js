@@ -1,5 +1,3 @@
-/* global instantsearch algoliasearch */
-
 const indexName = 'ecommerce_with_settings';
 
 const search = instantsearch({
@@ -31,7 +29,6 @@ search.addWidgets([
         const productURL =
           '/product.html?objectID=' +
           hit.objectID +
-          // because we haven't set the clickAnalytics to true we can't retrieve the queryID
           '&queryID=' +
           hit.__queryID +
           '&indexName' +
@@ -41,7 +38,6 @@ search.addWidgets([
         <a class="hit-card" href="${productURL}" ${bindEvent(
           'click',
           hit,
-          // todo: decide on an event name that makes sense, check the docs:
           'clicked the result'
         )}>
           <div class="hit-content">
