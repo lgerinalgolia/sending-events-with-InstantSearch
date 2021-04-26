@@ -27,12 +27,10 @@ search.addWidgets([
     templates: {
       item: (hit, bindEvent) => {
         const productURL =
-          '/product.html?objectID=' +
+          'product.html?objectID=' +
           hit.objectID +
           '&queryID=' +
-          hit.__queryID +
-          '&indexName' +
-          hit.__indexName;
+          hit.__queryID;
 
         return `
         <a class="hit-card" href="${productURL}" ${bindEvent(
