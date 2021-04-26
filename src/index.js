@@ -7,7 +7,7 @@ const search = instantsearch({
 
 search.use(
   instantsearch.middlewares.createInsightsMiddleware({
-    insightsClient: window.aa,
+    insightsClient: aa,
   })
 );
 
