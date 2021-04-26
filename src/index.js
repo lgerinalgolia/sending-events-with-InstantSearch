@@ -11,7 +11,7 @@ search.use(
   })
 );
 
-aa('setUserToken', 'yourToken');
+aa('setUserToken', 'user-1');
 
 search.addWidgets([
   instantsearch.widgets.searchBox({
