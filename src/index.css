@@ -1,0 +1,228 @@
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.ais-ClearRefinements {
+  margin: 1em 0;
+}
+
+.ais-SearchBox {
+  margin: 1em 0;
+}
+
+.ais-Pagination {
+  margin-top: 1em;
+}
+
+.left-panel {
+  float: left;
+  width: 250px;
+}
+
+.right-panel {
+  margin-left: 260px;
+}
+
+.ais-InstantSearch {
+  max-width: 960px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.ais-Hits-item {
+  margin-bottom: 1em;
+  width: calc(50% - 1rem);
+  top: 0px;
+}
+
+.ais-Hits-item img {
+  margin-right: 1em;
+}
+
+.ais-Hits-item:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  border: 1px solid #4d5af0;
+  background-color: white;
+}
+
+.hit-name {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+.product-name {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+#product-details {
+  width: 50%;
+}
+
+.hit-price {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+.hit-description {
+  margin-top: 1em;
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 0.5em;
+}
+
+#convert {
+  margin-top: 20px;
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  color: #4d5af0;
+  border-radius: 10px;
+  border-color: #4d5af0;
+}
+
+#convert:hover {
+  background-color: #e0e7ff;
+  color: #4d5af0;
+  cursor: pointer;
+}
+
+#convert:focus {
+  outline: none;
+}
+
+#convert:active {
+  border: solid 3px #4d5af0;
+  color: white;
+  background-color: #4d5af0;
+}
+
+.hit-card {
+  color: #3a4670;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.hit-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.ais-SearchBox {
+  margin: 1em 0;
+}
+
+.ais-Pagination {
+  margin-top: 1em;
+}
+
+.left-panel {
+  float: left;
+  width: 250px;
+}
+
+.right-panel {
+  margin-left: 260px;
+}
+
+.ais-InstantSearch {
+  max-width: 960px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.ais-Hits-item {
+  margin-bottom: 1em;
+  width: calc(50% - 1rem);
+  top: 0px;
+}
+
+.ais-Hits-item img {
+  margin-right: 1em;
+}
+
+.ais-Hits-item:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  border: 1px solid #4d5af0;
+  background-color: white;
+}
+
+.hit-name {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+.product-name {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+#product-details {
+  width: 50%;
+}
+
+.hit-price {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+.hit-description {
+  margin-top: 1em;
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 0.5em;
+}
+
+#convert {
+  margin-top: 20px;
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  color: #4d5af0;
+  border-radius: 10px;
+  border-color: #4d5af0;
+}
+
+#convert:hover {
+  background-color: #e0e7ff;
+  color: #4d5af0;
+  cursor: pointer;
+}
+
+#convert:focus {
+  outline: none;
+}
+
+#convert:active {
+  border: solid 3px #4d5af0;
+  color: white;
+  background-color: #4d5af0;
+}
+
+.hit-card {
+  color: #3a4670;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.hit-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
