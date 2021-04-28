@@ -1,5 +1,3 @@
-/* global aa algoliasearch */
-
 const urlParams = new URLSearchParams(window.location.search);
 
 const indexName = 'ecommerce_with_settings';
@@ -8,14 +6,14 @@ const index = client.initIndex(indexName);
 
 index.search(urlParams.get('objectID')).then(({ hits }) => {
   document.getElementById('product-details').innerHTML = `
-      <img src="${hits[0].image}" alt="${hits[0].name}" />
-      <div class="product-name">${hits[0].name}</div>
-      <div class="hit-price">Price $${hits[0].price}</div>
-      <div class="hit-description">${hits[0].description}</div>
+    <img src="${hits[0].image}" alt="${hits[0].name}" />
+    <div class="product-name">${hits[0].name}</div>
+    <div class="hit-price">Price $${hits[0].price}</div>
+    <div class="hit-description">${hits[0].description}</div>
   `;
 });
 
-document.getElementById('convert').addEventListener('click', () => {
+document.getElementById('add-to-cart').addEventListener('click', () => {
   aa('convertedObjectIDsAfterSearch', {
     userToken: 'user-1',
     index: indexName,

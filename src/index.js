@@ -1,5 +1,3 @@
-/* global instantsearch algoliasearch */
-
 const indexName = 'ecommerce_with_settings';
 
 const search = instantsearch({
@@ -9,11 +7,11 @@ const search = instantsearch({
 
 search.use(
   instantsearch.middlewares.createInsightsMiddleware({
-    insightsClient: window.aa,
+    insightsClient: aa,
   })
 );
 
-aa('setUserToken', 'yourToken');
+aa('setUserToken', 'user-1');
 
 search.addWidgets([
   instantsearch.widgets.searchBox({
@@ -29,27 +27,23 @@ search.addWidgets([
     templates: {
       item: (hit, bindEvent) => {
         const productURL =
-          '/product.html?objectID=' +
+          'product.html?objectID=' +
           hit.objectID +
-          // because we haven't set the clickAnalytics to true we can't retrieve the queryID
           '&queryID=' +
-          hit.__queryID +
-          '&indexName' +
-          hit.__indexName;
+          hit.__queryID;
 
         return `
-        <a class="hit-card" href="${productURL}" ${bindEvent(
-          'click',
-          hit,
-          // todo: decide on an event name that makes sense, check the docs:
-          'clicked the result'
-        )}>
-          <div class="hit-content">
-            <img src="${hit.image}" alt="${hit.name}" />
-            <div class="hit-name">${hit._highlightResult.name.value}</div>
-          </div>
-        </a>
-      `;
+          <a class="hit-card" href="${productURL}" ${bindEvent(
+            'click',
+            hit,
+            'clicked the result'
+          )}>
+            <div class="hit-content">
+              <img src="${hit.image}" alt="${hit.name}" />
+              <div class="hit-name">${hit._highlightResult.name.value}</div>
+            </div>
+          </a>
+        `;
       },
     },
   }),
