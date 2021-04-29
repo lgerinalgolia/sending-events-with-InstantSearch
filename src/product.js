@@ -16,10 +16,10 @@ index.search(objectID).then(({ hits }) => {
 
 document.getElementById('add-to-cart').addEventListener('click', () => {
   aa('convertedObjectIDsAfterSearch', {
-    userToken: 'user-1',
     index: indexName,
     eventName: 'Product Added to Cart',
-    queryID: urlParams.get('queryID'),
+    userToken: 'user-1',
     objectIDs: [objectID],
+    queryID: urlParams.get('queryID'),
   });
 });
