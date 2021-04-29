@@ -7,7 +7,7 @@ const index = client.initIndex(indexName);
 
 index.search(objectID).then(({ hits }) => {
   document.getElementById('product-details').innerHTML = `
-    <img src="${hits[0].image}" alt="${hits[0].name}" />
+    <img src="${hits[0].image}" />
     <div class="product-name">${hits[0].name}</div>
     <div class="hit-price">Price $${hits[0].price}</div>
     <div class="hit-description">${hits[0].description}</div>
