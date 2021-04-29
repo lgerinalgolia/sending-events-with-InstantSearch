@@ -36,7 +36,7 @@ search.addWidgets([
           <a class="hit-card" href="${productURL}" ${bindEvent(
             'click',
             hit,
-            'clicked the result'
+            'Search Result Clicked'
           )}>
             <div class="hit-content">
               <img src="${hit.image}" alt="${hit.name}" />

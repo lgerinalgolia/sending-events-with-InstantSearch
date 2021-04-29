@@ -18,7 +18,7 @@ document.getElementById('add-to-cart').addEventListener('click', () => {
   aa('convertedObjectIDsAfterSearch', {
     userToken: 'user-1',
     index: indexName,
-    eventName: 'Add to cart',
+    eventName: 'Product Added to Cart',
     queryID: urlParams.get('queryID'),
     objectIDs: [objectID],
   });
